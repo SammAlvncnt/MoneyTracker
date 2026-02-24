@@ -92,6 +92,15 @@ git push
 
 ---
 
+Apa Selanjutnya?
+Ini adalah fondasi yang solid. Dari sini, kamu bisa mengembangkannya lebih lanjut:
+
+1. Fitur Edit & Hapus Transaksi: Tambahkan tombol edit/hapus di setiap item.
+2. Layar Laporan yang Sesungguhnya: Gunakan library seperti react-native-svg-charts untuk membuat grafik Pie Chart dan Bar Chart.
+3. Filter & Pencarian: Tambahkan fitur filter di layar Riwayat.
+4. Manajemen Kategori: Buat layar untuk menambah, mengedit, dan menghapus kategori.
+5. UI/UX yang Lebih Baik: Tambahkan animasi, loading state, dan feedback yang lebih baik.
+
 ## 👨‍💻 Author
 
 Samuel Alvincent

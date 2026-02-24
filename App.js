@@ -1,24 +1,17 @@
+import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { MaterialIcons } from '@expo/vector-icons';
+import { TransactionProvider } from './src/context/TransactionContext';
+import AppNavigator from './src/navigation/AppNavigator';
 
-import LoginScreen from './screens/LoginScreen';
-import DashboardScreen from './screens/DashboardScreen';
-
-const Stack = createNativeStackNavigator();
-
-export default function App() {
+const App = () => {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login">
-        <Stack.Screen 
-          name="Login" 
-          component={LoginScreen} 
-        />
-        <Stack.Screen 
-          name="Dashboard" 
-          component={DashboardScreen} 
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <TransactionProvider>
+      <NavigationContainer>
+        <AppNavigator />
+      </NavigationContainer>
+    </TransactionProvider>
   );
-}
+};
+
+export default App;
